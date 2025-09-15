@@ -5,7 +5,7 @@ import sys
 pygame.init()
 
 # Размеры окна
-WIDTH, HEIGHT = 800, 600
+WIDTH, HEIGHT = 1280, 720
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("edojidai- Главное Меню")
 
@@ -21,9 +21,9 @@ title_font = pygame.font.SysFont("Arial", 64, bold=True)
 button_font = pygame.font.SysFont("Arial", 32)
 copyright_font = pygame.font.SysFont("Arial", 16)
 
-# Загрузка фонового изображения (если есть)
+# Загрузка фонового изображения 
 try:
-    background_image = pygame.image.load("menu.jpg")
+    background_image = pygame.image.load('фоны/деревня.JPG')
     background_image = pygame.transform.scale(background_image, (WIDTH, HEIGHT))
     has_background = True
 except:
@@ -31,7 +31,7 @@ except:
 
 # Музыка и звуки
 try:
-    pygame.mixer.music.load("menu_music.mp3")
+    pygame.mixer.music.load('sounds/menu_music.mp3')
     pygame.mixer.music.set_volume(0.5)
     pygame.mixer.music.play(-1)  # -1 означает повторение
 except:
@@ -135,7 +135,7 @@ def main_menu():
             button.draw(screen)
         
         # Копирайт
-        copyright_text = copyright_font.render("© 2024  Игра сделана DeKocoDeerSnake и iroslav-rik. Все права защищены.", True, TEXT_COLOR)
+        copyright_text = copyright_font.render("© 2025  Игра сделана DeKocoDeerSnake и iroslav-rik. Все права защищены.", True, TEXT_COLOR)
         screen.blit(copyright_text, (WIDTH - copyright_text.get_width() - 20, HEIGHT - 30))
         
         # Версия игры
