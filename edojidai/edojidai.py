@@ -139,7 +139,7 @@ def main_menu():
         screen.blit(copyright_text, (WIDTH - copyright_text.get_width() - 20, HEIGHT - 30))
         
         # Версия игры
-        version_text = copyright_font.render("Версия 1.0", True, TEXT_COLOR)
+        version_text = copyright_font.render("Версия alpfa 1.0", True, TEXT_COLOR)
         screen.blit(version_text, (20, HEIGHT - 30))
         
         pygame.display.flip()
