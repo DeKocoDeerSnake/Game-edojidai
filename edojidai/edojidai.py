@@ -23,7 +23,7 @@ copyright_font = pygame.font.SysFont("Arial", 16)
 
 # Загрузка фонового изображения 
 try:
-    background_image = pygame.image.load('фоны/деревня.JPG')
+    background_image = pygame.image.load('фоны/menu.JPG')
     background_image = pygame.transform.scale(background_image, (WIDTH, HEIGHT))
     has_background = True
 except:
